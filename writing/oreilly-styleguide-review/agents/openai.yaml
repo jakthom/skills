@@ -1,0 +1,4 @@
+interface:
+  display_name: "O’Reilly Style Guide Review"
+  short_description: "Review writing against O’Reilly house style"
+  default_prompt: "Use $oreilly-styleguide-review to review this manuscript for O’Reilly house style and return prioritized, source-linked findings."
