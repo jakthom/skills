@@ -1,6 +1,6 @@
 ---
 name: oreilly-styleguide-review
-description: Review, copyedit, or revise manuscripts, chapters, articles, captions, code-heavy technical prose, cover copy, and other book content against the complete O'Reilly Style Guide and Word List. Use for O'Reilly house-style checks, style-guide compliance audits, editorial QA, line edits, copyedits, proofreading, terminology normalization, inclusive-language review, code and cross-reference formatting, heading/list/number/punctuation review, or requests to explain and apply O'Reilly conventions.
+description: Review, copyedit, format, or revise manuscripts, chapters, articles, captions, code-heavy technical prose, cover copy, and other book content against the complete O'Reilly Style Guide and Word List. Use for O'Reilly house-style checks, style-guide compliance audits, editorial QA, line edits, copyedits, proofreading, terminology normalization, inclusive-language review, or formatting audits covering inline typography, semantic styles, headings, lists, code blocks, figures, tables, examples, captions, cross-references, links, footnotes, generated-AI output, and Word/AsciiDoc/DocBook/InDesign production conventions.
 ---
 
 # O'Reilly Style Guide Review
@@ -23,7 +23,9 @@ Do not block on missing metadata. Mark format- or series-dependent checks as con
 
 ## Load the Rules
 
-Read [references/house-style.md](references/house-style.md) completely for every review. It contains the full prose-rule snapshot and the precedence hierarchy.
+Read [references/house-style.md](references/house-style.md) completely for every review. It contains the editorial and prose rules plus the precedence hierarchy.
+
+Read [references/formatting.md](references/formatting.md) completely for every review. It contains the complete element-treatment matrix and production-format checks. A findings-only prose review still needs the inline typography, heading, list, punctuation, and link checks.
 
 Use [references/word-list.md](references/word-list.md) for spelling, casing, hyphenation, spacing, acronym, and part-of-speech decisions. For focused work, search it with `rg -ni '^[- ]*.*TERM' references/word-list.md`. For an exhaustive manuscript audit, inspect every suspect technical term against it; do not rely on memory.
 
@@ -42,10 +44,10 @@ Keep separate passes so one category does not hide another.
 1. Preserve meaning and voice. Flag factual or technical changes instead of making them under the guise of style.
 2. Check the project's explicit exceptions, then the O'Reilly guide, then Chicago 18, then Merriam-Webster's Collegiate. Do not override a higher-precedence decision with a lower-precedence source.
 3. Check inclusive, precise, conversational language and company/person agreement.
-4. Check structure: headings, heading adjacency, lists, admonitions, sidebars, cross-references, links, citations, footnotes, figures, tables, examples, and cover copy when applicable.
+4. Run the complete formatting audit in `references/formatting.md`: inline styles, block structures, navigation, media/data elements, code, generated-AI material, and source-format production requirements. Report categories that were not inspectable.
 5. Check mechanics: spelling, preferred forms, capitalization, acronyms, numbers, dates, punctuation, quotation marks, dashes, ellipses, articles, and hyphenation.
-6. Check technical typography: code versus prose, filenames/paths/URLs, user input, placeholders, SQL, UI labels, packages/libraries, and first-use terms.
-7. Check production constraints: electronic-format language, live xrefs, code widths, spaces instead of tabs, syntax highlighting, Word tags/comments/line breaks, and filename conventions.
+6. Check technical typography without inferring treatment from appearance alone: code versus prose, filenames/paths/URLs, user input, placeholders, SQL, UI labels, packages/libraries, and first-use terms must use the correct semantic role.
+7. Check production constraints for the actual authoring format: electronic-format language, live xrefs, code widths, spaces instead of tabs, syntax highlighting, Word tags/comments/line breaks, and filename conventions.
 8. Search the word list for each distinctive product name, protocol, platform, technical compound, unit, key name, and common variant. Check nearby entries when a compound's part of speech changes.
 9. Re-read every proposed correction in context. Remove false positives inside verbatim quotations, code, generated-AI output, literal UI strings, formal names, intentional voice, and documented exceptions.
 
@@ -75,6 +77,7 @@ Group repeated instances into one pattern finding and give representative locati
 After the findings, include:
 
 - Checks completed, including categories with no findings
+- Formatting coverage: inline, block, navigational, figure/table/example, code, AI-output, and format-specific checks; explicitly mark any category not present or not inspectable
 - Assumptions and conditional checks not resolved
 - Project-level decisions to add to the book-specific word list
 - Snapshot status when an upstream check was requested or materially relevant
@@ -97,4 +100,4 @@ Use `scripts/check_upstream.py` to detect upstream changes. After deliberately a
 python scripts/update_word_list.py /path/to/production-resources/styleguide/index.md references/word-list.md
 ```
 
-Then update the prose reference, snapshot metadata in both references and scripts, validate the 26 letter headings and entry counts, and rerun the skill validator. Do not regenerate blindly: upstream prose changes require human comparison and paraphrase.
+Then update the prose and formatting references, snapshot metadata in all references and scripts, validate the 26 letter headings and entry counts, and rerun the skill validator. Do not regenerate blindly: upstream prose or formatting changes require human comparison and paraphrase.
