@@ -1,9 +1,9 @@
 ---
-name: zinsser-editor-review
+name: zinsser-review
 description: Review, edit, or rewrite nonfiction using William Zinsser's On Writing Well craft principles. Use for Zinsser-style editorial review, plain-English revision, decluttering, clarity and concision audits, voice-preserving edits, active-verb and concrete-language review, organization and narrative-flow critique, leads and endings, sentence sound, or nonfiction forms including interviews, travel, memoir, science and technology, workplace writing, sports, arts criticism, columns, and humor.
 ---
 
-# Zinsser Editor Review
+# Zinsser Review
 
 Apply Zinsser's craft as an editorial lens: make the writer's meaning easier to follow, remove what does no useful work, and preserve the person behind the prose.
 
