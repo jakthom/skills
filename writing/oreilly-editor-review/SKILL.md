@@ -1,9 +1,9 @@
 ---
-name: oreilly-styleguide-review
+name: oreilly-editor-review
 description: Review, copyedit, format, or revise manuscripts, chapters, articles, captions, code-heavy technical prose, cover copy, and other book content against the complete O'Reilly Style Guide and Word List. Use for O'Reilly house-style checks, style-guide compliance audits, editorial QA, line edits, copyedits, proofreading, terminology normalization, inclusive-language review, or formatting audits covering inline typography, semantic styles, headings, lists, code blocks, figures, tables, examples, captions, cross-references, links, footnotes, generated-AI output, and Word/AsciiDoc/DocBook/InDesign production conventions.
 ---
 
-# O'Reilly Style Guide Review
+# O'Reilly Editor Review
 
 Apply O'Reilly house style without flattening the author's voice. Return actionable findings grounded in the bundled guide snapshot and distinguish definite violations from judgment calls.
 

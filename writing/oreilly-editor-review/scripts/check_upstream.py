@@ -73,7 +73,7 @@ class InventoryParser(HTMLParser):
 def load_source(source: str | None) -> bytes:
     if source:
         return Path(source).read_bytes()
-    request = urllib.request.Request(RAW_URL, headers={"User-Agent": "oreilly-styleguide-review"})
+    request = urllib.request.Request(RAW_URL, headers={"User-Agent": "oreilly-editor-review"})
     with urllib.request.urlopen(request, timeout=20) as response:
         return response.read()
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "O’Reilly Editor Review"
+  short_description: "Review O’Reilly prose and publication formatting"
+  default_prompt: "Use $oreilly-editor-review to audit this manuscript’s prose, semantic formatting, and production conventions against the complete O’Reilly guide."
