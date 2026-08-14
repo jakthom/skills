@@ -1,0 +1,4 @@
+interface:
+  display_name: "ASD-STE100 Review"
+  short_description: "Review technical text for STE compliance"
+  default_prompt: "Use $asd-ste100-review to audit this technical text against ASD-STE100 Issue 9 and return rule-linked findings plus a compliant revision."
