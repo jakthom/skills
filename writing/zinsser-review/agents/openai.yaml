@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zinsser Review"
+  short_description: "Review nonfiction with Zinsser’s craft principles"
+  default_prompt: "Use $zinsser-review to review this draft for clarity, simplicity, brevity, humanity, voice, structure, and nonfiction craft."
