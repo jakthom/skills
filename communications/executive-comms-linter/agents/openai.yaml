@@ -1,0 +1,4 @@
+interface:
+  display_name: "Executive Comms Linter"
+  short_description: "Make senior communication precise and hard to sidestep"
+  default_prompt: "Use $executive-comms-linter to review this message before I send it."
