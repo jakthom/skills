@@ -1,5 +1,13 @@
 This repository contains focused skills for communication and editorial review. Each skill packages the instructions and supporting references needed to apply a specific standard or editorial lens.
 
+# Installation
+
+Install with the [Skills CLI](https://github.com/vercel-labs/skills), then follow the prompts to choose skills and target agents:
+
+```sh
+npx skills add jakthom/skills
+```
+
 # Communications
 
 ## [Executive Comms Linter](communications/executive-comms-linter/SKILL.md)
