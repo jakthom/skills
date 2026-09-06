@@ -103,14 +103,20 @@ def clean(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
-def render(entries: dict[str, list[tuple[str, list[str]]]], source: str) -> str:
+def render(
+    entries: dict[str, list[tuple[str, list[str]]]],
+    source: str,
+    expected_count: int | None = None,
+) -> str:
     letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     missing = [letter for letter in letters if letter not in entries]
     if missing:
         raise ValueError(f"Missing letter sections: {', '.join(missing)}")
     count = sum(len(entries[letter]) for letter in letters)
-    if count != 600:
-        raise ValueError(f"Expected 600 top-level entries, found {count}")
+    if count == 0:
+        raise ValueError("No top-level word-list entries found")
+    if expected_count is not None and count != expected_count:
+        raise ValueError(f"Expected {expected_count} top-level entries, found {count}")
     lines = [
         "# O'Reilly Word List: Complete Snapshot",
         "",
@@ -142,12 +148,18 @@ def main() -> int:
         default=OFFICIAL_SOURCE,
         help="Provenance label written into the generated reference",
     )
+    parser.add_argument(
+        "--expected-count",
+        type=int,
+        help="Fail unless the audited source has this many top-level entries",
+    )
     args = parser.parse_args()
 
     source = Path(args.source)
     extractor = WordListParser()
     extractor.feed(source.read_text(encoding="utf-8"))
-    Path(args.output).write_text(render(extractor.entries, args.source_label), encoding="utf-8")
+    rendered = render(extractor.entries, args.source_label, args.expected_count)
+    Path(args.output).write_text(rendered, encoding="utf-8")
     return 0
 
 

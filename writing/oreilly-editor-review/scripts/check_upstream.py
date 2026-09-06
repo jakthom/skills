@@ -93,8 +93,12 @@ def main() -> int:
     digest = hashlib.sha256(payload).hexdigest()
     inventory = InventoryParser()
     inventory.feed(payload.decode("utf-8"))
+    inventory_valid = (
+        inventory.word_entries == EXPECTED_WORD_ENTRIES
+        and inventory.letters == EXPECTED_LETTERS
+    )
     result = {
-        "current": digest == EXPECTED_SHA256,
+        "current": digest == EXPECTED_SHA256 and inventory_valid,
         "expected_commit": EXPECTED_COMMIT,
         "expected_sha256": EXPECTED_SHA256,
         "actual_sha256": digest,
@@ -102,6 +106,7 @@ def main() -> int:
         "expected_word_entries": EXPECTED_WORD_ENTRIES,
         "letter_headings": inventory.letters,
         "letter_inventory_complete": inventory.letters == EXPECTED_LETTERS,
+        "inventory_valid": inventory_valid,
         "headings": inventory.headings,
         "source": args.source or RAW_URL,
     }

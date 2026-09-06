@@ -1,0 +1,21 @@
+This repository contains focused skills for communication and editorial review. Each skill packages the instructions and supporting references needed to apply a specific standard or editorial lens.
+
+# Communications
+
+## [Executive Comms Linter](communications/executive-comms-linter/SKILL.md)
+
+Reviews or rewrites communication from senior technical, product, and domain leaders before it is sent. It preserves substantive conclusions, authority, and directness while removing avoidable interpersonal friction, clarifying decisions and ownership, and identifying when a recurring communication problem is actually structural.
+
+# Writing
+
+## [ASD-STE100 Review](writing/asd-ste100-review/SKILL.md)
+
+Reviews, edits, or rewrites technical documentation against ASD-STE100 Simplified Technical English. It checks controlled vocabulary, sentence and paragraph limits, procedures, descriptive text, safety instructions, terminology, punctuation, and technical fidelity while clearly separating verified compliance from an STE-oriented revision.
+
+## [O'Reilly Editor Review](writing/oreilly-editor-review/SKILL.md)
+
+Reviews or revises O'Reilly book content for house style, word-list terminology, semantic formatting, and production readiness. It supports focused style questions through full-manuscript audits across prose, code, figures, tables, links, generated-AI material, and source formats such as AsciiDoc, HTMLBook, DocBook, Word, and IDML/InDesign.
+
+## [Zinsser Review](writing/zinsser-review/SKILL.md)
+
+Reviews, edits, or rewrites nonfiction using the craft principles associated with William Zinsser's *On Writing Well*. It improves clarity, simplicity, brevity, voice, organization, leads, endings, sentence rhythm, and form-specific craft without flattening the writer's personality or removing necessary meaning.

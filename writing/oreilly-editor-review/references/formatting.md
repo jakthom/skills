@@ -168,7 +168,7 @@ For programming-context content:
 
 ## Format-Specific Production Checks
 
-Use the separate authoring guide for implementation details in AsciiDoc, HTMLBook, DocBook, or Word. The style guide defines the treatment; the authoring guide defines the markup or named style.
+Use [authoring-formats.md](authoring-formats.md) for source-level implementation checks in AsciiDoc, HTMLBook, DocBook, Word, IDML/InDesign, or plain text/Markdown. The style guide defines the treatment; that reference identifies the markup, named styles, validation evidence, and format limits.
 
 | Format | Mandatory checks from the style guide |
 |---|---|
@@ -190,15 +190,15 @@ Before submitting a Word copyedit for conversion:
 
 ## Implementation References
 
-The official style guide delegates source-markup details to these resources:
+The official style guide delegates source-markup details to separate authoring resources. The operational rules and working sources are consolidated in [authoring-formats.md](authoring-formats.md). Primary references include:
 
 - Pygments [available lexers](https://pygments.org/docs/lexers/)
-- O'Reilly [Writing in AsciiDoc](http://docs.atlas.oreilly.com/writing_in_asciidoc.html), including inline styles, syntax highlighting, xrefs, and footnotes
-- [HTMLBook](http://oreillymedia.github.io/HTMLBook/)
+- O'Reilly's archived [Writing in AsciiDoc](https://web.archive.org/web/20221231051337/https://docs.atlas.oreilly.com/writing_in_asciidoc.html) and public [AsciiDoc book samples](https://github.com/oreillymedia/orm_book_samples/tree/master/asciidoc_only)
+- [HTMLBook](https://oreillymedia.github.io/HTMLBook/)
 - [DocBook](https://docbook.org/) and O'Reilly's [DocBook Authoring Guidelines](https://prod.oreilly.com/external/tools/docbook/docs/authoring/); when the latter requests credentials, use username `guest` and leave the password blank
-- O'Reilly [Word Template Quickstart Guide](http://oreillymedia.github.io/production-resources/word/), including paragraph/character styles and syntax highlighting
+- O'Reilly [Word Template Quickstart Guide](https://oreillymedia.github.io/production-resources/word/), including paragraph/character styles and syntax highlighting
 
-Consult these guides when the review must verify exact source syntax or named styles. Do not treat a link target as a replacement for the O'Reilly house-style treatment in this reference.
+Use `authoring-formats.md` when the review must verify source syntax or named styles. External guides provide deeper implementation detail but do not replace the O'Reilly house-style treatment in this reference.
 
 ## Cover-Copy Formatting
 
