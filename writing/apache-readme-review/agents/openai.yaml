@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apache README Review"
+  short_description: "Review READMEs against Apache project guidance"
+  default_prompt: "Use $apache-readme-review to review this project README against applicable Apache guidance and suggest concrete improvements."

@@ -16,6 +16,10 @@ Reviews or rewrites communication from senior technical, product, and domain lea
 
 # Writing
 
+## [Apache README Review](writing/apache-readme-review/SKILL.md)
+
+Reviews, revises, or drafts READMEs for Apache Software Foundation projects and incubating podlings. It checks project identity, installation and contribution paths, licensing references, security reporting, and applicable notices while distinguishing ASF policy requirements from project conventions and editorial recommendations.
+
 ## [ASD-STE100 Review](writing/asd-ste100-review/SKILL.md)
 
 Reviews, edits, or rewrites technical documentation against ASD-STE100 Simplified Technical English. It checks controlled vocabulary, sentence and paragraph limits, procedures, descriptive text, safety instructions, terminology, punctuation, and technical fidelity while clearly separating verified compliance from an STE-oriented revision.
