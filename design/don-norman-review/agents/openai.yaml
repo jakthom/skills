@@ -1,0 +1,4 @@
+interface:
+  display_name: "Don Norman Review"
+  short_description: "Review usability with Don Norman’s design principles"
+  default_prompt: "Use $don-norman-review to review this design using The Design of Everyday Things, explain the most consequential usability problems, and propose concrete improvements."

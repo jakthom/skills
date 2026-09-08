@@ -1,4 +1,4 @@
-This repository contains focused skills for communication and editorial review. Each skill packages the instructions and supporting references needed to apply a specific standard or editorial lens.
+This repository contains focused skills for communication, design, and editorial review. Each skill packages the instructions and supporting references needed to apply a specific standard or review lens.
 
 # Installation
 
@@ -13,6 +13,12 @@ npx skills add jakthom/skills
 ## [Executive Comms Linter](communications/executive-comms-linter/SKILL.md)
 
 Reviews or rewrites communication from senior technical, product, and domain leaders before it is sent. It preserves substantive conclusions, authority, and directness while removing avoidable interpersonal friction, clarifying decisions and ownership, and identifying when a recurring communication problem is actually structural.
+
+# Design
+
+## [Don Norman Review](design/don-norman-review/SKILL.md)
+
+Reviews products, interfaces, physical controls, and service workflows using Don Norman's *The Design of Everyday Things*. It diagnoses usability problems through affordances, signifiers, mappings, feedback, constraints, conceptual models, and discoverability, connecting findings to the action cycle, memory demands, error recovery, and concrete improvements.
 
 # Writing
 
