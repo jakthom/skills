@@ -30,6 +30,10 @@ Reviews, revises, or drafts READMEs for Apache Software Foundation projects and 
 
 Reviews, edits, or rewrites technical documentation against ASD-STE100 Simplified Technical English. It checks controlled vocabulary, sentence and paragraph limits, procedures, descriptive text, safety instructions, terminology, punctuation, and technical fidelity while clearly separating verified compliance from an STE-oriented revision.
 
+## [MIT Press Review](writing/mit-press-review/SKILL.md)
+
+Reviews, edits, or rewrites nonfiction using MIT Press's public book-evaluation and author guidance. It assesses reader value, audience fit, structure, clarity, precision, contribution, and scholarly responsibility while preserving voice and distinguishing published criteria, preparation requirements, and editorial recommendations.
+
 ## [O'Reilly Editor Review](writing/oreilly-editor-review/SKILL.md)
 
 Reviews or revises O'Reilly book content for house style, word-list terminology, semantic formatting, and production readiness. It supports focused style questions through full-manuscript audits across prose, code, figures, tables, links, generated-AI material, and source formats such as AsciiDoc, HTMLBook, DocBook, Word, and IDML/InDesign.

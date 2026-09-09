@@ -1,0 +1,4 @@
+interface:
+  display_name: "MIT Press Review"
+  short_description: "Review nonfiction using MIT Press editorial criteria"
+  default_prompt: "Use $mit-press-review to review this draft for clarity, precision, reader value, structure, and scholarly responsibility."
